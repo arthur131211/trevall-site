@@ -1,0 +1,1027 @@
+/* общие стили */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 20px 30px;
+    background-color: #13A6BA;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+h2{ 
+    font-size: 58px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+:root{
+    --purple-main: #772D8B;
+    --blue-main: #13A6BA;
+    --grey-main: #676767;
+    --white-main: #FBEDDA;
+    --red-main: #F93633;
+    --white-main-two: #CCCFD0;
+    --black-main: #021112;
+}
+
+.container{
+    margin: 0 10%;
+    padding: 20px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* верхняя часть сайта */
+header{
+    width: 100%;
+    background-color: #FBEDDA;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* nav{
+    background-color: green;
+} */
+
+/* навигация */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 80px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+.hero{
+    background-color: #FBEDDA;
+}
+
+.hero__inner{
+    /* Для этого блока нужно задать размер 50% но тогда он уезжает нужно будет inner сделать сокрее всего */
+    /* А лучше просто padding задать по 25% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero .description{
+    padding: 50px 0;
+    text-align: center;
+    color: #677071;
+}
+
+
+/* Блок с поиском */
+.search-block{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+                
+/* Верхняя часть */
+.search-block__top{
+    padding: 50px;
+    border-bottom: 1px solid #E0E2E3;
+}
+
+.search-block__top ul{
+    display: flex;
+}
+
+.search-block__top ul li{
+    list-style: none;
+    margin-right: 25px;
+    
+}
+
+.search-block__top ul li a{
+    font-size: 26px;
+    color: gray;
+    text-decoration: none;
+}
+                   
+
+/* Нижняя часть */
+.search-block__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.search-block__bottom__inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.search-block__bottom__inner__item{
+    padding: 0 40px;
+}
+
+.search-block__bottom__inner__item__logo{
+    display: flex;
+}
+
+.search-block__bottom__inner__item__logo p{
+    margin-left: 10px;
+}
+
+.search-block__bottom__inner__item-top{
+    font-size: 18px;
+}
+
+.search-block__bottom__inner__item-center{
+    font-size: 36px;
+}
+
+.search-block__bottom .btn{
+    padding: 25px 70px;
+    margin-left: 100px;
+    font-size: 28px;
+}
+
+.hero__inner img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* homes */
+.homes{
+    margin-bottom: 200px;
+}
+
+.homes__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.homes__h2-and-p{
+    margin-left: 40px;
+}
+
+.homes__all__cards{
+    display: flex;
+}
+
+.homes__card{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    padding: 35px;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.homes__card:hover{
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: 0.3s;
+}
+
+.homes__card img{
+    border-radius: 25px 25px 0 0;
+}
+
+.homes__card h3{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.homes__card p{
+    color: #677071;
+    margin-bottom: 45px;
+}
+
+.homes .cena-1{
+    color: black;
+    font-size: 58px;
+    margin-bottom: 30px;
+}
+
+.homes ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.homes ul li{
+    list-style: none;
+}
+
+.homes__card .btn{
+    background: none;
+    border: 2px solid #13A6BA;
+    color: #13A6BA;
+    transition: 0.3s;
+}
+
+.homes__card .btn:hover{
+    background: #13A6BA;
+    border: none;
+    color: white;    
+}
+
+/* стрелки */
+
+.wave{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.wave svg{
+    padding: 15px;
+    stroke: #772D8B;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.wave svg:hover{
+    background-color: #772D8B;
+    stroke: white;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Гаринтия на покупку */
+/* .garantion{
+
+} */
+
+.garantion__inner{
+    display: flex;
+}
+.garantion__inner-left{
+    width: 50%;
+    position: relative;
+}
+
+.tab{
+    width: 390px;
+    height: 190px;
+    position: absolute;
+    left: -100px;
+    bottom: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -12px 16px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.tab-down{
+    display: flex;
+}
+
+.tab-down img{
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.tab-down .btn{
+    background-color: #F93633;
+}
+
+.garantion__inner-right{
+    width: 50%;
+    padding: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.garantion__inner-right h2{
+    margin-bottom: 117px;
+}
+
+.garantion__inner__right-item{
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.garantion__inner__right-item__icon{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+}
+
+.garantion__inner__right-item__icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+.h3andp{
+    margin-left: 42px;
+}
+
+.garantion__inner__right-item p{
+    color: #677071;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Новости про сан диего */
+.news__inner{
+    display: flex;
+}
+
+
+/* Левый блок */
+.news__inner-left{
+    width: 50%;
+    padding-right: 100px;
+}
+
+.news__inner-left h2{
+    margin-top: 357px;
+    margin-bottom: 75px;
+    display: flex;
+}
+
+.description-for-home{
+    color: #677071;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 18px;
+}
+
+.sklad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sklad h3, .sklad p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sklad h3 span, .sklad p span {
+    display: block;
+    text-align: center;
+}
+
+.sklad p{
+    color: #677071;
+}
+
+.category-for-home{
+    color: #677071;
+    margin-bottom: 75px;
+    font-size: 18px;
+}
+
+/* Правый блок */
+
+.news__inner{
+    display: flex;
+    margin-top: 150px;
+}
+
+.news__inner-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.news__inner-right img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news__inner-right__google-home{
+    width: 100%;
+    height: 720px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 40px;
+    border-radius: 20px;
+    padding-top: 104px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.googe-home-main-img{
+    width: 100%;
+    position: relative;
+}
+
+/* Лого гугл сверху справа */
+.news__inner-right .google{
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -110px;
+    top: 75px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.favorites{
+    width: 53px;
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.googe-home-titile-small{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-and-share{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+}
+
+.comments-and-share p{
+    color: #677071;
+}
+
+.news__inner-right__google-home h4{
+    display: flex;
+    justify-content: center;
+}
+
+.news__inner__right__card{
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 20px;
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #F3C98B;
+    border-radius: 50%;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+}
+
+.h3-and-p{
+    text-align: center;
+}
+
+.h3-and-p p{
+    color: #CCCFD0;
+    margin-top: 15px;
+}
+
+.posts-and-followers{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    color: #677071;
+    justify-content: space-around;
+}
+
+.btn-1{
+    background-color: #772D8B;
+    display: flex;
+    align-items: center;
+}
+
+.btn-1 svg{
+    margin-right: 10px;
+}
+
+.btn-2 svg{
+    margin-right: 10px;
+}
+
+.svg-and-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-2{
+    background-color: #ffffff;
+    color: #677071;
+    border: 2px solid #E0E2E3;
+}
+
+.news__inner__right__card__bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ОТЗЫВ ОТ КАСТОМЕРА */
+
+.customer{
+    width: 100%;
+    margin-top: 245px;
+}
+
+.customer__inner{
+    width: 100%;
+    background-color: #FDF6ED;
+    display: flex;
+}
+
+.customer__inner__left{
+    width: 50%;
+    position: relative;
+}
+
+.customer__inner__left img{
+    height: 130%;
+    object-fit: cover;
+    overflow: visible;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.customer__inner__right{
+    width: 50%;
+    position: relative;
+    padding: 190px 200px;
+    box-sizing: border-box;
+}
+
+.customer__inner__right__top p{
+    font-size: 18px;
+    color: #13A6BA;
+}
+
+.customer__inner__right__top h2{
+    font-size: 58px;
+    font-weight: bold;
+    color: black;
+    line-height: 90px;
+}
+
+.customer__inner__right__center{
+    margin: 65px  0;
+}
+
+.customer__inner__right__center p{
+    color: #677071;
+}
+
+.customer__inner__right__bottom h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.customer__inner__right__bottom p{
+    font-size: 18px;
+    color: #677071;
+}
+
+.kovichki{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.luna{
+    position: absolute;
+    top: 100px;
+    left: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* СЕКЦИЯ ИМЕЙЛА */
+
+/* ОБЩИЕ */
+.input-the-email{
+    width: 100%;
+    margin-top: 235px;
+    position: relative;
+}
+
+.input-the-email__inner{
+    display: flex;
+    height: 375px;
+}
+
+/* ЛЕВЫЙ БЛОК */
+.input-the-email__inner__left{
+    width: 50%;
+    padding-right: 115px;
+}
+
+.input-the-email__inner__left__svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input-the-email__inner__left p{
+    color: #677071;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* ПРАВЫЙ БЛОК */
+.input-the-email__inner__right{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.input-the-email__inner__right__email{
+    width: 525px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #C8F3F9;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-the-email__inner__right__email input{
+    width: 100%;
+    border: 0;
+}
+
+.input-the-email__inner__right__email input:focus{
+    outline: none;
+}
+
+.input-the-email__inner__right__svg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.input-the-email__inner__right__email .btn{
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    margin-top: 140px;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__inner__description p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.footer__inner__razdel {
+    margin-right: 100px;
+    padding-left: 60px;
+}
+
+.footer__inner__razdel h4{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.footer__inner__razdel ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer__inner__razdel ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black-main);
+}
+
+.footer__inner__razdel p{
+    font-size: 20px;
+    color: var(--black-main);
+}
+
+.footer__inner__razdel__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__inner__razdel__link{
+    width: 41px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__inner__razdel__link:hover{ border: 2px solid var(--blue-main); }
+
+hr { margin: 50px 0; border: 1px solid #E0E2E3; }
+
+footer p{ color: var(--grey-main); margin-bottom: 30px; }
+
+.copyright{ text-align: center; }
